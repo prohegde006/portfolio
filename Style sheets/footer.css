@@ -1,0 +1,78 @@
+#contact {
+    display: grid;
+    grid-template-areas:
+        'dropbox dropbox contact contact contact'
+        'rights rights rights rights rights';
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact>div {
+    padding: 30px;
+}
+
+.dropbox {
+    grid-area: dropbox;
+}
+
+.dropbox>h3 {
+    margin-bottom: 20px;
+}
+
+.dropbox input {
+    border-radius: 5px;
+    padding: 10px;
+    width: 60%;
+    height: 3rem;
+    border-color: blue;
+}
+
+.dropbox>form>input::placeholder {
+    color: purple;
+    font-size: 15px;
+}
+
+#contact button {
+    width: 10%;
+    height: 3rem;
+    background-color: rgb(248, 0, 248);
+    border-radius: 5px;
+}
+
+#contact button:hover {
+    background-color: rgb(193, 101, 193);
+}
+
+.contact-links {
+    grid-area: contact;
+}
+
+.contact-links h3 {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+}
+
+
+.contact-links a {
+    color: white;
+    padding: 10px 20px 10px 0;
+    font-size: 1.5rem;
+}
+
+.contact-links a :hover {
+    color: purple;
+    transition: 0.3s;
+    font-size: 1.3rem;
+}
+
+.rights {
+    grid-area: rights;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}

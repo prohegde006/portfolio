@@ -1,0 +1,67 @@
+#my-things {
+    background-color: #fffb00;
+    padding: 6rem;
+    text-align: center;
+    font-family: 'Futsat', sans-serif;
+}
+
+#my-things h2 {
+    font-size: 4rem;
+    margin: 4rem;
+    font-family: 'Lora', sans-serif;
+    font-weight: 400;
+}
+
+
+.my-things-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.ca img {
+    height: 11rem;
+    margin: 0 0 20px;
+}
+
+.my-things-container>div {
+    background-color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    border: solid 2px black;
+}
+
+.my-things-container>div>h3 {
+    font-size: 1.7rem;
+    margin: 0 0 50px;
+}
+
+/*  Icons  */
+.my-things-container>.skill-set>img {
+    margin: 0 10px 13px;
+    /* border: dashed rgb(0, 30, 255); */
+    background-color: #ddd0d0;
+    border-radius: 5px;
+    padding: 10px;
+    width: 60px;
+}
+
+.my-things-container>div>ul>li {
+    list-style: none;
+    padding: 10px;
+    background-color: #e3e2e2;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    /* border: #000000 dashed; */
+}
+
+.my-things-container>div>ul>li>i {
+    font-size: 2rem;
+    color: #ffaa00;
+}
